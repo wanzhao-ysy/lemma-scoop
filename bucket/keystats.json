@@ -1,0 +1,15 @@
+{
+    "version": "1.50",
+    "description": "Privacy-focused keyboard and mouse statistics tracker",
+    "homepage": "https://github.com/debugtheworldbot/keyStats",
+    "license": "MIT",
+    "url": "https://github.com/debugtheworldbot/keyStats/releases/download/v1.50/KeyStats-Windows-1.50.zip",
+    "hash": "cd0472f24942f9251e714b67c3bfd5d42ee7213463d59b0d8638ddfc4a7a573a",
+    "shortcuts": [
+        ["KeyStats.exe", "KeyStats"]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/debugtheworldbot/keyStats/releases/download/v$version/KeyStats-Windows-$version.zip"
+    }
+}
