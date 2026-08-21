@@ -19,18 +19,19 @@
             "$config_path = \"$env:APPDATA\\Tencent\\xwechat\\config\"",
             "ensure \"$config_path\" | Out-Null",
             "Set-Content -NoNewline -Path \"$config_path\\51a1fffea11325a1e4104c6b3de47af7.ini\" -Value \"$persist_dir\"",
-            "$reg_path = \"HKCU:Software\\Tencent\\Wexin\"",
+            "$reg_path = \"HKCU:\\Software\\Tencent\\Wexin\"",
             "if (!(Test-Path \"$reg_path\")) {",
             "    New-Item -Path \"$reg_path\" -Type Directory -Force | Out-Null",
             "}",
             "New-ItemProperty -Path $reg_path -Name \"FileSavePath\" -Value \"$persist_dir\" -Force | Out-Null",
-            "New-Item -Path $reg_path -Name \"InstallPath\" -Value \"$dir\" -Force -ErrorAction SilentlyContinue | Out-Null"
+            "New-ItemProperty -Path $reg_path -Name \"InstallPath\" -Value \"$dir\" -Force | Out-Null"
         ]
     },
     "uninstaller": {
         "script": [
             "Remove-Item -Path \"$env:APPDATA\\Tencent\\xwechat\\config\\51a1fffea11325a1e4104c6b3de47af7.ini\" -Force | Out-Null",
-            "Remove-ItemProperty -Path \"HKCU:Software\\Tencent\\Wexin\" -Name \"FileSavePath\" -Force | Out-Null"
+            "Remove-ItemProperty -Path \"HKCU:\\Software\\Tencent\\Wexin\" -Name \"FileSavePath\" -Force | Out-Null",
+            "Remove-ItemProperty -Path \"HKCU:\\Software\\Tencent\\Wexin\" -Name \"InstallPath\" -Force | Out-Null"
         ]
     },
     "shortcuts": [
