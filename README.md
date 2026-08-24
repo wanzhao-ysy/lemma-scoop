@@ -13,6 +13,7 @@ scoop install lemma-scoop/<app>
 
 | App | 说明 |
 | --- | --- |
+| alma | Elegant AI Provider Orchestration |
 | bettergi | BetterGI · 更好的原神 |
 | geekez-browser | 指纹防关联浏览器(电商多账号,Xray 代理) |
 | keystats | 隐私优先的键鼠统计 |
