@@ -1,5 +1,5 @@
 {
-    "version": "5.1.2.0",
+    "version": "5.2.1.0",
     "description": "ToDesk Windows客户端",
     "homepage": "https://www.todesk.com/",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://www.todesk.com/pricing.html"
     },
     "url": "https://update.todesk.com/windows/ToDesk_Setup.exe#/dl.7z",
-    "hash": "362511a118ccf9d2bb19a6c695058caaef4067cfa1b88eef3cff00608577b36b",
+    "hash": "ceeca98f86eb8fe79f6a7622b02d41b5031496119c13385e5d9718c134118995",
     "pre_install": [
         "Expand-7ZipArchive \"$dir\\app64.7z\" \"$dir\"",
         "Remove-Item -R -Path \"$dir\\`$PLUGINSDIR\"",
