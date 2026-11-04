@@ -6,7 +6,7 @@
         "identifier": "Proprietary",
         "url": "https://uuyc.163.com/"
     },
-    "url": "https://api.nrd.nie.163.com/api/v1/release/dl/1?channel=gwqd",
+    "url": "https://api.nrd.nie.163.com/api/v1/release/dl/1?channel=gwqd#/uuyc.exe",
     "hash": "49c9eac9566c528fa46c736e705eda5f7d9ea760cb6349bf9db81baab7b939aa",
     "installer": {
         "script": [
@@ -99,7 +99,7 @@
         "regex": "https://a56\\.gdl\\.netease\\.com/UURemote_Setup_(?<version>[\\d.]+)_(?<build>[^?]+)\\.exe(?<query>\\?.*)"
     },
     "autoupdate": {
-        "url": "https://api.nrd.nie.163.com/api/v1/release/dl/1?channel=gwqd",
+        "url": "https://api.nrd.nie.163.com/api/v1/release/dl/1?channel=gwqd#/uuyc.exe",
         "hash": {
             "mode": "download"
         }
