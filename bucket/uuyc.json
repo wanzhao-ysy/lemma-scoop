@@ -1,5 +1,5 @@
 {
-    "version": "4.45.0.4318",
+    "version": "4.46.0.4716",
     "description": "网易UU远程，提供低延迟远程连接与云游戏体验。",
     "homepage": "https://uuyc.163.com/",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://uuyc.163.com/"
     },
     "url": "https://api.nrd.nie.163.com/api/v1/release/dl/1?channel=gwqd#/uuyc.exe",
-    "hash": "49c9eac9566c528fa46c736e705eda5f7d9ea760cb6349bf9db81baab7b939aa",
+    "hash": "ee378fcfd7147df776e380324ad462fabb795014cf95cd011a793b1500cb069d",
     "installer": {
         "script": [
             "$src = \"$env:LOCALAPPDATA\\GameViewer\"",
